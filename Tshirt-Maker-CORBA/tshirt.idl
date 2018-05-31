@@ -1,0 +1,19 @@
+module TShirtApp {
+typedef sequence<octet> octetSeq;
+enum Color{blue,red,black};
+struct Tshirt{
+
+long width;
+long height;
+ Color color;
+wstring brand;
+};
+ interface TShirtServer {
+	
+long getPriceOfSimpleTshirt(in long width,in long height);
+long getPriceOfSpecialTshirt(in Tshirt TShirt);
+octetSeq makeImage(in string  s);
+
+
+ };
+ };
