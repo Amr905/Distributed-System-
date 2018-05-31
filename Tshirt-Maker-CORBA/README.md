@@ -8,4 +8,3 @@ and in client
 '''-ORBInitialPort 1050 -ORBInitialHost localhost'''
 then run client.java
 
-
